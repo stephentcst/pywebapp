@@ -6,7 +6,7 @@ b = app.browser()
 
 def test_Default():
     b.open('/')
-    assert 'Stephen Thompson A01044262' in b.get_text()
+    assert 'Stephen Thompson, A01044262' in b.get_text()
 
 def test_Api():
     b.open('/api/v1/test')
